@@ -4,14 +4,12 @@ on:
   push:
     branches:
       - main
- 
- env:
+env:
   AZURE_RESOURCE_GROUP: cd-with-actions
   AZURE_APP_PLAN: actions-ttt-deployment
   AZURE_LOCATION: '"AUSTRALIA EAST"'
   AZURE_WEBAPP_NAME: juanmiguelnz-ttt-app
-  
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
