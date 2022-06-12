@@ -1,0 +1,12 @@
+name: Production deployment
+
+on:
+  push:
+    branches:
+      - main
+ 
+ env:
+  AZURE_RESOURCE_GROUP: cd-with-actions
+  AZURE_APP_PLAN: actions-ttt-deployment
+  AZURE_LOCATION: '"AUSTRALIA EAST"'
+  AZURE_WEBAPP_NAME: juanmiguelnz-ttt-app
